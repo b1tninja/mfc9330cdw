@@ -43,3 +43,8 @@ recovery, and security analysis. Several tools send authentication challenges
 or write to the device (`tools/brcrypt_confirm.py`, `tools/telnet_login_probe.py`,
 the `admin100` SNMP tree); they can lock or brick a unit. Keep this repository
 private while that tooling and the firmware handling remain under study.
+
+Questions or concerns about material in this repository? Contact
+[4584655+b1tninja@users.noreply.github.com](mailto:4584655+b1tninja@users.noreply.github.com)
+— contact is checked regularly and legitimate removal requests are actioned
+directly and promptly.
