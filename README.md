@@ -44,6 +44,19 @@ or write to the device (`tools/brcrypt_confirm.py`, `tools/telnet_login_probe.py
 the `admin100` SNMP tree); they can lock or brick a unit. Keep this repository
 private while that tooling and the firmware handling remain under study.
 
+This is an independent research effort by the device's owner. It is not
+affiliated with, endorsed by, or sponsored by Brother Industries, Ltd.;
+product names and trademarks are the property of their respective owners.
+
+## Security & rights
+
+- Security issues in the device family discussed here can be reported through
+  the contact below; findings are held privately while a vendor fix path is
+  available — see [SECURITY.md](SECURITY.md).
+- The notes, scripts, and documentation are the author's original work;
+  rights are reserved and the material is provided without warranty of any
+  kind — see [LICENSE](LICENSE).
+
 Questions or concerns about material in this repository? Contact
 [4584655+b1tninja@users.noreply.github.com](mailto:4584655+b1tninja@users.noreply.github.com)
 — contact is checked regularly and legitimate removal requests are actioned
