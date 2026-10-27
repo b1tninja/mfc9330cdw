@@ -1,0 +1,68 @@
+# ---------------------------------------------------------------------------
+# Local environment / build residue
+# ---------------------------------------------------------------------------
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Ad-hoc scratch (probe scripts, redirected command output)
+.tmp_*
+.*.txt
+.*.log
+*.log
+
+# ---------------------------------------------------------------------------
+# Large local data — regenerate with scripts/download-all.ps1, never versioned
+# ---------------------------------------------------------------------------
+# Browser captures; keep raw on disk, export only derived notes into docs/.
+*.har
+
+# Vendor files (~1.26 GB).  Notes below are allow-listed one path at a time
+# rather than by a *.md pattern: downloads/ contains extracted packages
+# whose README/LICENSE files must not be swept back in.
+downloads/**
+!downloads/**/
+
+# Provenance / catalog notes (ours)
+!downloads/README.md
+!downloads/drivers/README.md
+!downloads/meta/hardly-site-brief.md
+!downloads/firmware/meta/live-inventory-2026-10-25.md
+
+# DJF firmware analysis (ours)
+!downloads/firmware/blobs/README.md
+!downloads/firmware/blobs/FORMAT.md
+!downloads/firmware/blobs/binwalk/README.md
+!downloads/firmware/blobs/cdn_older/README.md
+!downloads/firmware/corpus/COMPARE.md
+!downloads/firmware/corpus/MAIN_XOR_112.md
+!downloads/firmware/corpus/XOR_LETTER_DIFFS.md
+
+# Hardware notes (ours)
+!downloads/hardware/spare-board/SPI-NOTES.md
+
+# Nested clone with its own history and remote.
+reference/
+
+# ---------------------------------------------------------------------------
+# Hardware capture artifacts (logic-analyzer exports, SPI dumps)
+# ---------------------------------------------------------------------------
+*.sal
+*.srdump
+*.csv.gz
+tools/spi_dump/captures/
+
+# ---------------------------------------------------------------------------
+# Editor / OS
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
